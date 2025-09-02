@@ -17,7 +17,8 @@ if ard2pi:
             time.sleep(0.01)
             if ser.in_waiting>0:
                 line=ser.readline().decode('utf-8').rstrip()
-                print(line)
+                line=float(line)
+                print(f'{type(line)}: {line}')
 
     except KeyboardInterrupt:
         print("Close Serial Communication")
