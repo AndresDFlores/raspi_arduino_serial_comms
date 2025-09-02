@@ -6,6 +6,6 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Serial.printin("Hello from Arduino");
+  Serial.println("Hello from Arduino");
   delay(1000);
 }
